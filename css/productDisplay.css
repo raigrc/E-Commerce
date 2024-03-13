@@ -1,0 +1,281 @@
+body{
+    background-color: #ecedee
+}
+.card{
+    border: none;overflow: hidden
+}
+.thumbnail_images ul{
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 10px
+}
+.thumbnail_images ul li{
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #eee;
+    cursor: pointer;
+    transition: all 0.5s
+}
+.thumbnail_images ul li:hover{
+    border: 2px solid #000
+}
+.main_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    height: auto;
+    margin: 1em 0 0 0;
+    width: 100%;
+    overflow: hidden;
+}
+.content p{
+    font-size: 12px
+}
+.ratings span{
+    font-size: 14px;
+    margin-left: 12px
+}
+.colors{
+    margin-top: 5px
+}
+.colors ul{
+    list-style: none;
+    display: flex;
+    padding-left: 0px
+}
+.colors ul li{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer
+}
+.colors ul li:nth-child(1){
+    background-color: #6c704d
+}
+.colors ul li:nth-child(2){
+    background-color: #96918b
+}
+.colors ul li:nth-child(3){
+    background-color: #68778e
+}
+.colors ul li:nth-child(4){
+    background-color: #263f55
+}
+.colors ul li:nth-child(5){
+    background-color: black
+}
+.right-side{
+    position: relative
+}
+
+.right-side h1{
+    margin: 1.2em 0 0 0;
+}
+.search-option{
+    position: absolute;
+    background-color: #000;
+    overflow: hidden;
+    align-items: center;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 49% 51% 50% 50% / 68% 69% 31% 32%;
+    left: 30%;
+    bottom: -250px;
+    transition: all 0.5s;
+    cursor: pointer
+}
+.search-option .first-search{
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    font-size: 20px;
+    opacity: 1000}
+    .search-option .inputs{
+        opacity: 0;
+        transition: all 0.5s ease;
+        transition-delay: 0.5s;
+        position: relative
+    }
+    .search-option .inputs input{
+        position: absolute;
+        top: 200px;
+        left: 30px;
+        padding-left: 20px;
+        background-color: transparent;
+        width: 300px;
+        border: none;
+        color: #fff;
+        border-bottom: 1px solid #eee;
+        transition: all 0.5s;
+        z-index: 10
+    }
+    .search-option .inputs input:focus{
+        box-shadow: none;
+        outline: none;
+        z-index: 10
+    }
+    .search-option:hover{
+        border-radius: 0px;
+        width: 100%;
+        left: 0px
+    }
+    .search-option:hover .inputs{
+        opacity: 1
+    }
+    .search-option:hover .first-search{
+        left: 27px;
+        top: 25px;
+        font-size: 15px
+    }
+    .search-option:hover .inputs input{
+        top: 20px
+    }
+    .search-option .share{
+        position: absolute;
+        right: 20px;
+        top: 22px
+    }
+    .buttons .btn{
+        height: 50px;
+        width: 150px;
+        border-radius: 0px 
+        !important
+    }
+    .btn-outline-dark:hover{
+        color:white;
+        background-color: #7ecbe2;;
+        border-color:#7ecbe2;
+        transition: all 0.4s ease;
+    }
+    .btn-check:focus .btn-outline-dark .btn-outline-dark:focus{
+        box-shadow:0 0 0 .25rem rgba(33,37,41,.5)
+    }
+    .btn-check:active .btn-outline-dark .btn-check:checked .btn-outline-dark .btn-outline-dark.active .btn-outline-dark.dropdown-toggle.show,.btn-outline-dark:active{
+        color:#fff;
+        background-color:#212529;
+        border-color:#212529
+    }
+    .btn-check:active+.btn-outline-dark:focus,.btn-check:checked+.btn-outline-dark:focus,.btn-outline-dark.active:focus,.btn-outline-dark.dropdown-toggle.show:focus,.btn-outline-dark:active:focus{
+        box-shadow:0 0 0 .25rem rgba(33,37,41,.5)
+    }
+    .btn-outline-dark.disabled,.btn-outline-dark:disabled{
+        color:#212529;
+        background-color:transparent
+    }
+    .btn-link{
+        font-weight:400;color:#0d6efd;
+        text-decoration:underline
+    }
+    .btn-link:hover{
+        color:#0a58ca
+    }
+    .btn-link.disabled,.btn-link:disabled{
+        color:#6c757d
+    }
+    .btn-dark{
+        color:#fff;
+        background-color:#212529;
+        border-color:#212529
+}
+.btn-dark:hover{
+    color:white;
+        background-color: #7ecbe2;
+        border-color:#7ecbe2;
+        transition: all 0.4s ease;
+}
+.btn-check:focus+.btn-dark,.btn-dark:focus{
+    color: black;
+    background-color:white;
+    border-color:white;
+
+}
+.btn-check:active+.btn-dark,.btn-check:checked+.btn-dark,.btn-dark.active,.btn-dark:active,.show>.btn-dark.dropdown-toggle{
+    color:#fff;
+    background-color:#1a1e21;
+    border-color:#191c1f
+}
+.btn-dark.disabled,.btn-dark:disabled{
+    color:#fff;
+    background-color:#212529;
+    border-color:#212529
+}
+.btn-outline-primary{
+    color:#0d6efd;
+    border-color:#0d6efd
+}
+.btn-outline-primary:hover{
+    color:#fff;
+    background-color:#0d6efd;
+    border-color:#0d6efd
+}
+
+
+/* Hide the input arrow buttons */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Style the quantity container */
+.quantity {
+  display: inline;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  height: 32px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Style the quantity input */
+.quantity input {
+  width: 60px;
+  height: 100%;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Style the quantity buttons */
+
+.quantity button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1em 0 0 0;
+  }
+.quantity button:hover {
+  width: 40px;
+  height: 40px;
+  background-color: #7ecbe2;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Style the quantity up button */
+.quantity-up {
+  border-radius: 0 0 0 0 0;
+  border: none;
+}
+
+/* Style the quantity down button */
+.quantity-down {
+  border-radius: 0 0 0 0;
+  border: none;
+}
